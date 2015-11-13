@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7F0AB7B1BF5784500D8CADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0AB7A1BF5784500D8CADC /* AppDelegate.swift */; };
+		A7F0AB7D1BF5784500D8CADC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0AB7C1BF5784500D8CADC /* ViewController.swift */; };
+		A7F0AB801BF5784500D8CADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F0AB7E1BF5784500D8CADC /* Main.storyboard */; };
+		A7F0AB821BF5784500D8CADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F0AB811BF5784500D8CADC /* Assets.xcassets */; };
+		A7F0AB851BF5784500D8CADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F0AB831BF5784500D8CADC /* LaunchScreen.storyboard */; };
+		A7F0AB901BF5784500D8CADC /* chatroomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0AB8F1BF5784500D8CADC /* chatroomTests.swift */; };
+		A7F0AB9B1BF5784500D8CADC /* chatroomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0AB9A1BF5784500D8CADC /* chatroomUITests.swift */; };
+		A7F0ABBC1BF5787500D8CADC /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABA91BF5787500D8CADC /* SocketAckEmitter.swift */; };
+		A7F0ABBD1BF5787500D8CADC /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABAA1BF5787500D8CADC /* SocketAckManager.swift */; };
+		A7F0ABBE1BF5787500D8CADC /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABAB1BF5787500D8CADC /* SocketAnyEvent.swift */; };
+		A7F0ABBF1BF5787500D8CADC /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABAC1BF5787500D8CADC /* SocketEngine.swift */; };
+		A7F0ABC01BF5787500D8CADC /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABAD1BF5787500D8CADC /* SocketEngineClient.swift */; };
+		A7F0ABC11BF5787500D8CADC /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABAE1BF5787500D8CADC /* SocketEnginePacketType.swift */; };
+		A7F0ABC21BF5787500D8CADC /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABAF1BF5787500D8CADC /* SocketEngineSpec.swift */; };
+		A7F0ABC31BF5787500D8CADC /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB01BF5787500D8CADC /* SocketEventHandler.swift */; };
+		A7F0ABC41BF5787500D8CADC /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB11BF5787500D8CADC /* SocketFixUTF8.swift */; };
+		A7F0ABC51BF5787500D8CADC /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB21BF5787500D8CADC /* SocketIOClient.swift */; };
+		A7F0ABC61BF5787500D8CADC /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB31BF5787500D8CADC /* SocketIOClientOption.swift */; };
+		A7F0ABC71BF5787500D8CADC /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB41BF5787500D8CADC /* SocketIOClientStatus.swift */; };
+		A7F0ABC81BF5787500D8CADC /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB51BF5787500D8CADC /* SocketLogger.swift */; };
+		A7F0ABC91BF5787500D8CADC /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB61BF5787500D8CADC /* SocketPacket.swift */; };
+		A7F0ABCA1BF5787500D8CADC /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB71BF5787500D8CADC /* SocketParser.swift */; };
+		A7F0ABCB1BF5787500D8CADC /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB81BF5787500D8CADC /* SocketStringReader.swift */; };
+		A7F0ABCC1BF5787500D8CADC /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABB91BF5787500D8CADC /* SocketTypes.swift */; };
+		A7F0ABCD1BF5787500D8CADC /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABBA1BF5787500D8CADC /* SwiftRegex.swift */; };
+		A7F0ABCE1BF5787500D8CADC /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F0ABBB1BF5787500D8CADC /* WebSocket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7F0AB8C1BF5784500D8CADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7F0AB6F1BF5784500D8CADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F0AB761BF5784500D8CADC;
+			remoteInfo = chatroom;
+		};
+		A7F0AB971BF5784500D8CADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7F0AB6F1BF5784500D8CADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F0AB761BF5784500D8CADC;
+			remoteInfo = chatroom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7F0AB771BF5784500D8CADC /* chatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F0AB7A1BF5784500D8CADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7F0AB7C1BF5784500D8CADC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7F0AB7F1BF5784500D8CADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7F0AB811BF5784500D8CADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7F0AB841BF5784500D8CADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7F0AB861BF5784500D8CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F0AB8B1BF5784500D8CADC /* chatroomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatroomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F0AB8F1BF5784500D8CADC /* chatroomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatroomTests.swift; sourceTree = "<group>"; };
+		A7F0AB911BF5784500D8CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F0AB961BF5784500D8CADC /* chatroomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatroomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F0AB9A1BF5784500D8CADC /* chatroomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatroomUITests.swift; sourceTree = "<group>"; };
+		A7F0AB9C1BF5784500D8CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F0ABA91BF5787500D8CADC /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketAckEmitter.swift"; sourceTree = "<group>"; };
+		A7F0ABAA1BF5787500D8CADC /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketAckManager.swift"; sourceTree = "<group>"; };
+		A7F0ABAB1BF5787500D8CADC /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketAnyEvent.swift"; sourceTree = "<group>"; };
+		A7F0ABAC1BF5787500D8CADC /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketEngine.swift"; sourceTree = "<group>"; };
+		A7F0ABAD1BF5787500D8CADC /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketEngineClient.swift"; sourceTree = "<group>"; };
+		A7F0ABAE1BF5787500D8CADC /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEnginePacketType.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketEnginePacketType.swift"; sourceTree = "<group>"; };
+		A7F0ABAF1BF5787500D8CADC /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngineSpec.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketEngineSpec.swift"; sourceTree = "<group>"; };
+		A7F0ABB01BF5787500D8CADC /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketEventHandler.swift"; sourceTree = "<group>"; };
+		A7F0ABB11BF5787500D8CADC /* SocketFixUTF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketFixUTF8.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketFixUTF8.swift"; sourceTree = "<group>"; };
+		A7F0ABB21BF5787500D8CADC /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketIOClient.swift"; sourceTree = "<group>"; };
+		A7F0ABB31BF5787500D8CADC /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientOption.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketIOClientOption.swift"; sourceTree = "<group>"; };
+		A7F0ABB41BF5787500D8CADC /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientStatus.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketIOClientStatus.swift"; sourceTree = "<group>"; };
+		A7F0ABB51BF5787500D8CADC /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketLogger.swift"; sourceTree = "<group>"; };
+		A7F0ABB61BF5787500D8CADC /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketPacket.swift"; sourceTree = "<group>"; };
+		A7F0ABB71BF5787500D8CADC /* SocketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketParser.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketParser.swift"; sourceTree = "<group>"; };
+		A7F0ABB81BF5787500D8CADC /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketStringReader.swift"; sourceTree = "<group>"; };
+		A7F0ABB91BF5787500D8CADC /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SocketTypes.swift"; sourceTree = "<group>"; };
+		A7F0ABBA1BF5787500D8CADC /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftRegex.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/SwiftRegex.swift"; sourceTree = "<group>"; };
+		A7F0ABBB1BF5787500D8CADC /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = "../../../meanPrac/Socket.IO-Client-Swift/SocketIOClientSwift/WebSocket.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7F0AB741BF5784500D8CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F0AB881BF5784500D8CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F0AB931BF5784500D8CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7F0AB6E1BF5784500D8CADC = {
+			isa = PBXGroup;
+			children = (
+				A7F0AB791BF5784500D8CADC /* chatroom */,
+				A7F0AB8E1BF5784500D8CADC /* chatroomTests */,
+				A7F0AB991BF5784500D8CADC /* chatroomUITests */,
+				A7F0AB781BF5784500D8CADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7F0AB781BF5784500D8CADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0AB771BF5784500D8CADC /* chatroom.app */,
+				A7F0AB8B1BF5784500D8CADC /* chatroomTests.xctest */,
+				A7F0AB961BF5784500D8CADC /* chatroomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7F0AB791BF5784500D8CADC /* chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0ABA81BF5785300D8CADC /* SocketIO */,
+				A7F0AB7A1BF5784500D8CADC /* AppDelegate.swift */,
+				A7F0AB7C1BF5784500D8CADC /* ViewController.swift */,
+				A7F0AB7E1BF5784500D8CADC /* Main.storyboard */,
+				A7F0AB811BF5784500D8CADC /* Assets.xcassets */,
+				A7F0AB831BF5784500D8CADC /* LaunchScreen.storyboard */,
+				A7F0AB861BF5784500D8CADC /* Info.plist */,
+			);
+			path = chatroom;
+			sourceTree = "<group>";
+		};
+		A7F0AB8E1BF5784500D8CADC /* chatroomTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0AB8F1BF5784500D8CADC /* chatroomTests.swift */,
+				A7F0AB911BF5784500D8CADC /* Info.plist */,
+			);
+			path = chatroomTests;
+			sourceTree = "<group>";
+		};
+		A7F0AB991BF5784500D8CADC /* chatroomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0AB9A1BF5784500D8CADC /* chatroomUITests.swift */,
+				A7F0AB9C1BF5784500D8CADC /* Info.plist */,
+			);
+			path = chatroomUITests;
+			sourceTree = "<group>";
+		};
+		A7F0ABA81BF5785300D8CADC /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				A7F0ABA91BF5787500D8CADC /* SocketAckEmitter.swift */,
+				A7F0ABAA1BF5787500D8CADC /* SocketAckManager.swift */,
+				A7F0ABAB1BF5787500D8CADC /* SocketAnyEvent.swift */,
+				A7F0ABAC1BF5787500D8CADC /* SocketEngine.swift */,
+				A7F0ABAD1BF5787500D8CADC /* SocketEngineClient.swift */,
+				A7F0ABAE1BF5787500D8CADC /* SocketEnginePacketType.swift */,
+				A7F0ABAF1BF5787500D8CADC /* SocketEngineSpec.swift */,
+				A7F0ABB01BF5787500D8CADC /* SocketEventHandler.swift */,
+				A7F0ABB11BF5787500D8CADC /* SocketFixUTF8.swift */,
+				A7F0ABB21BF5787500D8CADC /* SocketIOClient.swift */,
+				A7F0ABB31BF5787500D8CADC /* SocketIOClientOption.swift */,
+				A7F0ABB41BF5787500D8CADC /* SocketIOClientStatus.swift */,
+				A7F0ABB51BF5787500D8CADC /* SocketLogger.swift */,
+				A7F0ABB61BF5787500D8CADC /* SocketPacket.swift */,
+				A7F0ABB71BF5787500D8CADC /* SocketParser.swift */,
+				A7F0ABB81BF5787500D8CADC /* SocketStringReader.swift */,
+				A7F0ABB91BF5787500D8CADC /* SocketTypes.swift */,
+				A7F0ABBA1BF5787500D8CADC /* SwiftRegex.swift */,
+				A7F0ABBB1BF5787500D8CADC /* WebSocket.swift */,
+			);
+			name = SocketIO;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7F0AB761BF5784500D8CADC /* chatroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F0AB9F1BF5784500D8CADC /* Build configuration list for PBXNativeTarget "chatroom" */;
+			buildPhases = (
+				A7F0AB731BF5784500D8CADC /* Sources */,
+				A7F0AB741BF5784500D8CADC /* Frameworks */,
+				A7F0AB751BF5784500D8CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chatroom;
+			productName = chatroom;
+			productReference = A7F0AB771BF5784500D8CADC /* chatroom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7F0AB8A1BF5784500D8CADC /* chatroomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F0ABA21BF5784500D8CADC /* Build configuration list for PBXNativeTarget "chatroomTests" */;
+			buildPhases = (
+				A7F0AB871BF5784500D8CADC /* Sources */,
+				A7F0AB881BF5784500D8CADC /* Frameworks */,
+				A7F0AB891BF5784500D8CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F0AB8D1BF5784500D8CADC /* PBXTargetDependency */,
+			);
+			name = chatroomTests;
+			productName = chatroomTests;
+			productReference = A7F0AB8B1BF5784500D8CADC /* chatroomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7F0AB951BF5784500D8CADC /* chatroomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F0ABA51BF5784500D8CADC /* Build configuration list for PBXNativeTarget "chatroomUITests" */;
+			buildPhases = (
+				A7F0AB921BF5784500D8CADC /* Sources */,
+				A7F0AB931BF5784500D8CADC /* Frameworks */,
+				A7F0AB941BF5784500D8CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F0AB981BF5784500D8CADC /* PBXTargetDependency */,
+			);
+			name = chatroomUITests;
+			productName = chatroomUITests;
+			productReference = A7F0AB961BF5784500D8CADC /* chatroomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7F0AB6F1BF5784500D8CADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sung Kang";
+				TargetAttributes = {
+					A7F0AB761BF5784500D8CADC = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HJFB9K8YWU;
+					};
+					A7F0AB8A1BF5784500D8CADC = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HJFB9K8YWU;
+						TestTargetID = A7F0AB761BF5784500D8CADC;
+					};
+					A7F0AB951BF5784500D8CADC = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = HJFB9K8YWU;
+						TestTargetID = A7F0AB761BF5784500D8CADC;
+					};
+				};
+			};
+			buildConfigurationList = A7F0AB721BF5784500D8CADC /* Build configuration list for PBXProject "chatroom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7F0AB6E1BF5784500D8CADC;
+			productRefGroup = A7F0AB781BF5784500D8CADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7F0AB761BF5784500D8CADC /* chatroom */,
+				A7F0AB8A1BF5784500D8CADC /* chatroomTests */,
+				A7F0AB951BF5784500D8CADC /* chatroomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7F0AB751BF5784500D8CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F0AB851BF5784500D8CADC /* LaunchScreen.storyboard in Resources */,
+				A7F0AB821BF5784500D8CADC /* Assets.xcassets in Resources */,
+				A7F0AB801BF5784500D8CADC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F0AB891BF5784500D8CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F0AB941BF5784500D8CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7F0AB731BF5784500D8CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F0ABC11BF5787500D8CADC /* SocketEnginePacketType.swift in Sources */,
+				A7F0ABC01BF5787500D8CADC /* SocketEngineClient.swift in Sources */,
+				A7F0ABC41BF5787500D8CADC /* SocketFixUTF8.swift in Sources */,
+				A7F0ABC51BF5787500D8CADC /* SocketIOClient.swift in Sources */,
+				A7F0ABCA1BF5787500D8CADC /* SocketParser.swift in Sources */,
+				A7F0ABC31BF5787500D8CADC /* SocketEventHandler.swift in Sources */,
+				A7F0ABCB1BF5787500D8CADC /* SocketStringReader.swift in Sources */,
+				A7F0ABCD1BF5787500D8CADC /* SwiftRegex.swift in Sources */,
+				A7F0ABBF1BF5787500D8CADC /* SocketEngine.swift in Sources */,
+				A7F0ABC21BF5787500D8CADC /* SocketEngineSpec.swift in Sources */,
+				A7F0ABBE1BF5787500D8CADC /* SocketAnyEvent.swift in Sources */,
+				A7F0ABBD1BF5787500D8CADC /* SocketAckManager.swift in Sources */,
+				A7F0ABC71BF5787500D8CADC /* SocketIOClientStatus.swift in Sources */,
+				A7F0ABCE1BF5787500D8CADC /* WebSocket.swift in Sources */,
+				A7F0ABBC1BF5787500D8CADC /* SocketAckEmitter.swift in Sources */,
+				A7F0ABC81BF5787500D8CADC /* SocketLogger.swift in Sources */,
+				A7F0AB7D1BF5784500D8CADC /* ViewController.swift in Sources */,
+				A7F0ABC61BF5787500D8CADC /* SocketIOClientOption.swift in Sources */,
+				A7F0ABCC1BF5787500D8CADC /* SocketTypes.swift in Sources */,
+				A7F0ABC91BF5787500D8CADC /* SocketPacket.swift in Sources */,
+				A7F0AB7B1BF5784500D8CADC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F0AB871BF5784500D8CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F0AB901BF5784500D8CADC /* chatroomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F0AB921BF5784500D8CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F0AB9B1BF5784500D8CADC /* chatroomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7F0AB8D1BF5784500D8CADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7F0AB761BF5784500D8CADC /* chatroom */;
+			targetProxy = A7F0AB8C1BF5784500D8CADC /* PBXContainerItemProxy */;
+		};
+		A7F0AB981BF5784500D8CADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7F0AB761BF5784500D8CADC /* chatroom */;
+			targetProxy = A7F0AB971BF5784500D8CADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7F0AB7E1BF5784500D8CADC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7F0AB7F1BF5784500D8CADC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7F0AB831BF5784500D8CADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7F0AB841BF5784500D8CADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7F0AB9D1BF5784500D8CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7F0AB9E1BF5784500D8CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7F0ABA01BF5784500D8CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = chatroom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msn.sungjk.chatroom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7F0ABA11BF5784500D8CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = chatroom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msn.sungjk.chatroom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7F0ABA31BF5784500D8CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = chatroomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msn.sungjk.chatroomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatroom.app/chatroom";
+			};
+			name = Debug;
+		};
+		A7F0ABA41BF5784500D8CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = chatroomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msn.sungjk.chatroomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chatroom.app/chatroom";
+			};
+			name = Release;
+		};
+		A7F0ABA61BF5784500D8CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = chatroomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msn.sungjk.chatroomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chatroom;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A7F0ABA71BF5784500D8CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = chatroomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msn.sungjk.chatroomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chatroom;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7F0AB721BF5784500D8CADC /* Build configuration list for PBXProject "chatroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F0AB9D1BF5784500D8CADC /* Debug */,
+				A7F0AB9E1BF5784500D8CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F0AB9F1BF5784500D8CADC /* Build configuration list for PBXNativeTarget "chatroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F0ABA01BF5784500D8CADC /* Debug */,
+				A7F0ABA11BF5784500D8CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A7F0ABA21BF5784500D8CADC /* Build configuration list for PBXNativeTarget "chatroomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F0ABA31BF5784500D8CADC /* Debug */,
+				A7F0ABA41BF5784500D8CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A7F0ABA51BF5784500D8CADC /* Build configuration list for PBXNativeTarget "chatroomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7F0ABA61BF5784500D8CADC /* Debug */,
+				A7F0ABA71BF5784500D8CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7F0AB6F1BF5784500D8CADC /* Project object */;
+}
