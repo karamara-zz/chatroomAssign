@@ -10,10 +10,17 @@
             socket.on('connect', function (data) {
               console.log('BROWSER::WE ARE USING SOCKETS!');
             })
+            socket.on('messageToPage', function(data){
+              console.log('messageToPage', data, typeof (data));
+
+              $('#message').append("<p> "+ data+"</p>")
+            })
         })
     </script>
   </head>
   <body>
     <h1>Hello</h1>
+    <div id='message'>
+    </div>
   </body>
 </html>

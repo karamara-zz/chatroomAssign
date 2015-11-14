@@ -17,4 +17,8 @@ var io = require('socket.io').listen(server);
 io.sockets.on('connection', function (socket) {
   console.log('SERVER::WE ARE USING SOCKETS!');
   console.log(socket.id);
+  socket.on('messageToServer', function(data){
+  	console.log(" receving message from ios", data, typeof(data))
+  	io.sockets.emit('messageToPage', data);
+  })
 });
