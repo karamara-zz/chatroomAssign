@@ -10,6 +10,7 @@ app.set('port', (process.env.PORT || 6789));
 app.get('/', function(req, res) {
  res.render('index');
 });
+var messages =[];
 var server = app.listen(app.get('port'), function() {
   console.log('listening on port', app.get('port'));
 });
@@ -18,7 +19,9 @@ io.sockets.on('connection', function (socket) {
   console.log('SERVER::WE ARE USING SOCKETS!');
   console.log(socket.id);
   socket.on('messageToServer', function(data){
-  	console.log(" receving message from ios", data, typeof(data))
-  	io.sockets.emit('messageToPage', data);
+  	messages.push(data)
+  	console.log(" receving message from ios", messages, typeof(data))
+  	io.sockets.emit('messageToPage', messages);
+  	io.sockets.emit('messageFromServer', messages);
   })
 });

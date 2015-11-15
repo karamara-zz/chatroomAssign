@@ -35,7 +35,7 @@
                                     <action selector="sendButtonPressed:" destination="dp8-ny-sDQ" eventType="touchUpInside" id="mgM-9w-uwc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://lit-earth-8847.herokuapp.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXu-uu-VEo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="localhost:6789" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXu-uu-VEo">
                                 <rect key="frame" x="20" y="72" width="420" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgY-sm-8FR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="1140"/>
+            <point key="canvasLocation" x="914" y="1100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BQ4-ic-5W7">

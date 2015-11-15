@@ -18,6 +18,12 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         socket?.connect()
         socket?.on("connect") { data, ack in
             print("iOS::WE ARE USING SOCKETS!")
+            print(data)
+        }
+        socket?.on("messageFromServer"){data , ack in
+            print("\(data)")
+                self.messages = data[0] as! [String]
+            self.tableView.reloadData()
         }
         
     }

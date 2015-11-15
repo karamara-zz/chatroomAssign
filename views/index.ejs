@@ -12,8 +12,11 @@
             })
             socket.on('messageToPage', function(data){
               console.log('messageToPage', data, typeof (data));
-
-              $('#message').append("<p> "+ data+"</p>")
+              dataString = ""
+              for (message in data){
+                dataString += "<p> "+ data[message]+"</p>";
+              }
+              $('#message').html(dataString);
             })
         })
     </script>
